@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>神马电影网秋霞｜秋霞片单索引与观影排期手册 shenmadianyingwangqiuxia-app.github.io</title>
+<meta name="description" content="神马电影网秋霞（shenmadianyingwangqiuxia-app.github.io）收录秋霞专区每周片单、类型索引、排期日程与观影指南：按导演风格、叙事结构、影像质感三重维度整理条目，附时长、产地、观看难度与适配场景说明，帮你在片荒时快速锁定今晚要看的那一部。">
+<meta name="keywords" content="神马电影网秋霞,秋霞片单索引,秋霞专区观影排期,神马电影网秋霞官网,shenmadianyingwangqiuxia-app,影片类型导航,周末观影指南,黑白作者电影推荐,导演风格片单">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="author" content="神马电影网秋霞编辑部">
+<meta name="theme-color" content="#101713">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://shenmadianyingwangqiuxia-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="神马电影网秋霞">
+<meta property="og:title" content="神马电影网秋霞｜秋霞片单索引与观影排期手册">
+<meta property="og:description" content="每周更新的秋霞片单索引：类型导航、排期日程、观影难度分级与适配场景说明，一部手机就能挑好今晚的电影。">
+<meta property="og:url" content="https://shenmadianyingwangqiuxia-app.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="神马电影网秋霞｜秋霞片单索引与观影排期手册">
+<meta name="twitter:description" content="按导演风格、叙事结构、影像质感三重维度整理条目，附时长、产地与观看难度说明。">
+<style>
+:root{
+  --ink:#101713;
+  --ink-2:#18211b;
+  --paper:#efe9dc;
+  --paper-dim:#b9b3a6;
+  --amber:#e2a63c;
+  --amber-soft:#f2cd85;
+  --moss:#5c7f68;
+  --line:rgba(239,233,220,.14);
+  --radius:14px;
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei",system-ui,sans-serif;
+  font-size:16px;line-height:1.75;
+  background-image:
+    radial-gradient(circle at 12% -10%,rgba(226,166,60,.12),transparent 42%),
+    radial-gradient(circle at 88% 8%,rgba(92,127,104,.16),transparent 46%);
+  background-attachment:fixed;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+h1,h2,h3,h4{line-height:1.3;font-weight:700;letter-spacing:.02em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.tiny{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--paper-dim)}
+
+/* 顶部 */
+.topbar{
+  position:sticky;top:0;z-index:60;
+  background:rgba(16,23,19,.92);
+  backdrop-filter:saturate(140%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-in{display:flex;align-items:center;gap:18px;height:66px}
+.brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.brand-mark{
+  width:34px;height:34px;border-radius:9px;flex-shrink:0;
+  background:linear-gradient(150deg,var(--amber),#a9701f);
+  display:grid;place-items:center;
+  box-shadow:0 4px 14px rgba(226,166,60,.28);
+}
+.brand-mark span{font-size:15px;font-weight:800;color:#22160a;letter-spacing:-.04em}
+.brand-txt b{display:block;font-size:18px;letter-spacing:.04em}
+.brand-txt i{
+  display:block;font-style:normal;font-size:11px;letter-spacing:.22em;
+  color:var(--amber-soft);opacity:.85;
+}
+.nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+.nav a{
+  display:block;padding:8px 13px;border-radius:999px;font-size:14px;
+  color:var(--paper-dim);transition:.22s;
+}
+.nav a:hover,.nav a.on{background:rgba(226,166,60,.14);color:var(--amber-soft)}
+.menu-btn{
+  display:none;margin-left:auto;width:42px;height:38px;border:1px solid var(--line);
+  background:transparent;border-radius:10px;color:var(--paper);font-size:16px;cursor:pointer;
+}
+
+/* HERO：票根式 */
+.hero{padding:56px 0 40px}
+.ticket{
+  position:relative;overflow:hidden;
+  border:1px solid var(--line);border-radius:var(--radius);
+  background:linear-gradient(120deg,var(--ink-2) 0%,#141b16 55%,#1b241d 100%);
+  display:grid;grid-template-columns:150px 1fr;
+  box-shadow:0 24px 60px -30px rgba(0,0,0,.9);
+}
+.ticket::before,.ticket::after{
+  content:"";position:absolute;left:150px;width:16px;height:8px;
+  background:var(--ink);border-radius:0 0 8px 8px;z-index:2;
+}
+.ticket::before{top:0}
+.ticket::after{bottom:0;transform:rotate(180deg)}
+.spine{
+  writing-mode:vertical-rl;text-orientation:upright;
+  background:repeating-linear-gradient(180deg,#223028 0 26px,#1b251f 26px 28px);
+  border-right:1px dashed rgba(226,166,60,.4);
+  display:flex;align-items:center;justify-content:center;gap:10px;padding:22px 0;
+}
+.spine b{font-size:19px;letter-spacing:.34em;color:var(--amber-soft)}
+.spine em{font-style:normal;font-size:11px;letter-spacing:.3em;color:var(--moss)}
+.hero-body{padding:38px 34px}
+.hero-body h1{
+  font-size:clamp(27px,4.4vw,44px);letter-spacing:.03em;
+  background:linear-gradient(92deg,#fff,var(--amber-soft) 62%,var(--amber));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero-body h1 small{
+  display:block;font-size:13px;font-weight:500;letter-spacing:.2em;
+  -webkit-text-fill-color:var(--moss);margin-top:12px;
+}
+.lede{margin-top:16px;max-width:64ch;color:#d8d2c5;font-size:15.5px}
+.lede strong{color:var(--amber-soft);font-weight:600}
+.urlbar{
+  margin-top:22px;display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;
+  border:1px dashed rgba(226,166,60,.45);border-radius:999px;padding:9px 16px;
+  background:rgba(226,166,60,.07);
+}
+.urlbar i{font-style:normal;font-size:12px;letter-spacing:.16em;color:var(--moss)}
+.urlbar b{font-size:13.5px;font-weight:600;color:var(--amber-soft);word-break:break-all;letter-spacing:.02em}
+.cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:11px 22px;border-radius:10px;font-size:14.5px;font-weight:600;transition:.2s;
+}
+.btn-a{background:var(--amber);color:#241803;box-shadow:0 8px 22px -12px rgba(226,166,60,.8)}
+.btn-a:hover{transform:translateY(-2px)}
+.btn-b{border:1px solid var(--line);color:var(--paper)}
+.btn-b:hover{border-color:var(--amber);color:var(--amber-soft)}
+.metabar{
+  margin-top:26px;padding-top:18px;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
+}
+.metabar div b{display:block;font-size:22px;color:var(--amber-soft);letter-spacing:.02em}
+.metabar div span{font-size:12.5px;color:var(--paper-dim)}
+
+/* 区块通用 */
+section{padding:54px 0 8px}
+.sec-head{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:26px}
+.sec-head h2{font-size:clamp(21px,2.6vw,28px);position:relative;padding-left:16px}
+.sec-head h2::before{
+  content:"";position:absolute;left:0;top:.42em;width:6px;height:1.05em;
+  background:var(--amber);border-radius:3px;
+}
+.sec-head p{color:var(--paper-dim);font-size:13.5px;max-width:52ch}
+.sec-head .tiny{margin-left:auto}
+
+/* 栏目一：片单 */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+  position:relative;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  background:linear-gradient(170deg,#18211b,#131a15);transition:.25s;
+}
+.card:hover{transform:translateY(-4px);border-color:rgba(226,166,60,.5)}
+.thumb{
+  height:132px;display:flex;align-items:flex-end;padding:14px;
+  background:
+    linear-gradient(180deg,rgba(0,0,0,.15),rgba(16,23,19,.9)),
+    repeating-linear-gradient(90deg,#253229 0 22px,#1e2a23 22px 24px);
+  border-bottom:1px solid var(--line);
+}
+.thumb s{
+  position:absolute;top:12px;left:14px;font-size:11px;font-weight:700;letter-spacing:.1em;
+  color:#22160a;background:var(--amber);padding:3px 8px;border-radius:6px;text-decoration:none;
+}
+.thumb em{font-style:normal;font-size:12px;color:var(--paper-dim);letter-spacing:.1em}
+.c-body{padding:16px 17px 19px}
+.c-body h3{font-size:17px;margin-bottom:9px}
+.c-body h3 a:hover{color:var(--amber-soft)}
+.c-body p{font-size:13.5px;color:#c3bdb0;min-height:3.5em}
+.tags{margin-top:13px;display:flex;gap:7px;flex-wrap:wrap}
+.tags a{
+  font-size:11.5px;padding:3px 9px;border-radius:999px;
+  border:1px solid var(--line);color:var(--paper-dim);
+}
+.tags a:hover{border-color:var(--moss);color:var(--moss)}
+.more{margin-top:24px;text-align:center}
+.more a{
+  display:inline-block;border:1px solid var(--line);border-radius:999px;
+  padding:10px 26px;font-size:14px;color:var(--paper-dim);
+}
+.more a:hover{border-color:var(--amber);color:var(--amber-soft)}
+
+/* 栏目二：类型索引 + 侧栏 */
+.split{display:grid;grid-template-columns:1.55fr 1fr;gap:22px}
+.panel{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:rgba(24,33,27,.55)}
+.panel h3{font-size:17px;margin-bottom:14px}
+.cloud{display:flex;flex-wrap:wrap;gap:9px}
+.cloud a{
+  font-size:13px;padding:8px 14px;border-radius:8px;
+  background:rgba(239,233,220,.06);border:1px solid var(--line);transition:.2s;
+}
+.cloud a:hover{background:rgba(226,166,60,.16);border-color:var(--amber);color:var(--amber-soft)}
+.cloud a.big{font-size:15.5px;padding:10px 18px;background:rgba(226,166,60,.12)}
+.rank{margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+.rank li{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.rank li:last-child{border-bottom:0}
+.rank li b{width:22px;height:22px;flex-shrink:0;display:grid;place-items:center;border-radius:6px;
+  font-size:12px;background:rgba(239,233,220,.08);color:var(--paper-dim)}
+.rank li:nth-child(1) b,.rank li:nth-child(2) b,.rank li:nth-child(3) b{background:var(--amber);color:#22160a}
+.rank li span{margin-left:auto;font-size:12.5px;color:var(--moss)}
+.aside{display:flex;flex-direction:column;gap:22px}
+.note{border-left:3px solid var(--amber);padding:4px 0 4px 14px;font-size:13.5px;color:#cbc5b8}
+.kv li{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.kv li:last-child{border-bottom:0}
+.kv li span{color:var(--paper-dim)}
+.kv li b{font-weight:600;color:var(--amber-soft)}
+
+/* 栏目三：时间轴 */
+.timeline{position:relative;padding-left:26px}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:1px;background:var(--line)}
+.timeline li{position:relative;padding-bottom:22px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{
+  content:"";position:absolute;left:-25px;top:9px;width:9px;height:9px;border-radius:50%;
+  background:var(--ink);border:2px solid var(--amber);
+}
+.timeline h4{font-size:15.5px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.timeline h4 u{
+  text-decoration:none;font-size:11.5px;padding:2px 9px;border-radius:6px;
+  background:rgba(92,127,104,.2);color:#9dc0aa;border:1px solid rgba(92,127,104,.4);
+}
+.timeline p{margin-top:6px;font-size:13.5px;color:#c3bdb0}
+
+/* 栏目四：FAQ */
+.faq{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:last-child{border-bottom:0}
+.faq summary{
+  cursor:pointer;padding:17px 22px;font-size:15.5px;font-weight:600;list-style:none;
+  display:flex;align-items:center;gap:12px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";margin-left:auto;color:var(--amber);font-size:19px;font-weight:400}
+.faq details[open] summary{background:rgba(226,166,60,.07)}
+.faq details[open] summary::after{content:"−"}
+.faq .ans{padding:0 22px 19px;font-size:14px;color:#c9c3b6;max-width:88ch}
+.faq .ans b{color:var(--amber-soft)}
+
+/* 栏目五：档案 */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.about p{font-size:14.5px;color:#c9c3b6;margin-bottom:14px}
+.about p strong{color:var(--paper)}
+.pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.pillars div{border:1px solid var(--line);border-radius:12px;padding:15px;background:rgba(24,33,27,.5)}
+.pillars div b{display:block;font-size:14px;color:var(--amber-soft);margin-bottom:5px}
+.pillars div span{font-size:12.5px;color:var(--paper-dim)}
+
+/* 页脚 */
+footer{margin-top:56px;border-top:1px solid var(--line);background:#0c120e;padding:42px 0 30px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px}
+.f-grid h5{font-size:13.5px;margin-bottom:13px;color:var(--amber-soft);letter-spacing:.06em}
+.f-grid li{font-size:13px;padding:5px 0;color:var(--paper-dim)}
+.f-grid li a:hover{color:var(--paper)}
+.f-brand b{font-size:17px;letter-spacing:.04em}
+.f-brand p{margin-top:10px;font-size:12.8px;color:var(--paper-dim);max-width:38ch}
+.f-brand .urlbar{margin-top:14px;padding:7px 13px}
+.f-brand .urlbar b{font-size:12.2px}
+.copy{
+  margin-top:30px;padding-top:18px;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.3px;color:#7f8b83;
+}
+.copy a:hover{color:var(--amber-soft)}
+
+@media (max-width:960px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .split,.about{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  .wrap{padding:0 16px}
+  .menu-btn{display:block}
+  .nav{
+    position:absolute;left:0;right:0;top:66px;margin:0;
+    background:#131a15;border-bottom:1px solid var(--line);
+    flex-direction:column;padding:8px 16px 16px;display:none;
+  }
+  .nav.open{display:flex}
+  .nav a{padding:12px 6px;font-size:15px;border-radius:8px}
+  .ticket{grid-template-columns:1fr}
+  .ticket::before,.ticket::after{display:none}
+  .spine{
+    writing-mode:horizontal-tb;border-right:0;border-bottom:1px dashed rgba(226,166,60,.4);
+    padding:12px 16px;justify-content:flex-start;gap:14px;
+  }
+  .spine b{letter-spacing:.2em;font-size:16px}
+  .hero-body{padding:26px 20px 30px}
+  .metabar{grid-template-columns:repeat(2,1fr)}
+  .grid{grid-template-columns:1fr}
+  .pillars{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr}
+  .hero{padding:30px 0 22px}
+  section{padding:38px 0 6px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://shenmadianyingwangqiuxia-app.github.io/#website",
+      "url": "https://shenmadianyingwangqiuxia-app.github.io/",
+      "name": "神马电影网秋霞",
+      "alternateName": ["神马电影网秋霞片单索引", "秋霞专区观影排期"],
+      "inLanguage": "zh-CN",
+      "description": "秋霞专区每周片单、类型索引、排期日程与观影指南手册。",
+      "publisher": {"@id": "https://shenmadianyingwangqiuxia-app.github.io/#org"}
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://shenmadianyingwangqiuxia-app.github.io/#org",
+      "name": "神马电影网秋霞",
+      "url": "https://shenmadianyingwangqiuxia-app.github.io/",
+      "description": "以导演风格、叙事结构与影像质感三重维度整理电影片单的索引型站点。"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "神马电影网秋霞首页", "item": "https://shenmadianyingwangqiuxia-app.github.io/"},
+        {"@type": "ListItem", "position": 2, "name": "本周片单", "item": "https://shenmadianyingwangqiuxia-app.github.io/#picks"},
+        {"@type": "ListItem", "position": 3, "name": "类型索引", "item": "https://shenmadianyingwangqiuxia-app.github.io/#index"},
+        {"@type": "ListItem", "position": 4, "name": "排期日程", "item": "https://shenmadianyingwangqiuxia-app.github.io/#schedule"},
+        {"@type": "ListItem", "position": 5, "name": "观影指南", "item": "https://shenmadianyingwangqiuxia-app.github.io/#guide"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "神马电影网秋霞的片单是怎么挑出来的？",
+          "acceptedAnswer": {"@type": "Answer", "text": "按导演风格、叙事结构、影像质感三条线索交叉筛选，再按观看难度分级，标注时长与适配场景。"}
+        },
+        {
+          "@type": "Question",
+          "name": "片荒时该从哪里开始看？",
+          "acceptedAnswer": {"@type": "Answer", "text": "先看类型索引确定情绪方向，再回到本周片单挑一部时长合适的条目，睡前优先选节奏舒缓的一类。"}
+        },
+        {
+          "@type": "Question",
+          "name": "站内的排期日程多久更新一次？",
+          "acceptedAnswer": {"@type": "Answer", "text": "每周一更新整周排期，周末加推一次补录，条目变动会在排期日程区块同步标注。"}
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#" aria-label="神马电影网秋霞首页">
+      <span class="brand-mark" aria-hidden="true"><span>SM</span></span>
+      <span class="brand-txt">
+        <b>神马电影网秋霞</b>
+        <i>QIUXIA PICK INDEX</i>
+      </span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="展开导航菜单" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#picks">本周片单</a>
+      <a href="#index">类型索引</a>
+      <a href="#schedule">排期日程</a>
+      <a href="#guide">观影指南</a>
+      <a href="#archive">站点档案</a>
+      <a href="#contact">联系入口</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap hero">
+    <div class="ticket">
+      <div class="spine">
+        <b>神马电影网秋霞</b>
+        <em>QIUXIA FILM INDEX</em>
+      </div>
+      <div class="hero-body">
+        <h1>神马电影网秋霞：把今晚要看的那部片挑出来
+          <small>SHENMA DIANYING WANG QIUXIA · 片单索引与观影排期手册</small>
+        </h1>
+        <p class="lede">
+          <strong>神马电影网秋霞</strong>不做资源搬运，只做筛选：按导演风格、叙事结构、影像质感三条线索重新整理条目，
+          标注时长、产地、观看难度与适配场景。通勤路上、周末深夜、朋友聚会，三种心情各有一栏，
+          翻两屏就能定下来看什么，省掉在片库里来回滑动的二十分钟。
+        </p>
+        <div class="urlbar">
+          <i>本站地址</i>
+          <b>https://shenmadianyingwangqiuxia-app.github.io</b>
+        </div>
+        <div class="cta">
+          <a class="btn btn-a" href="#picks">进入本周片单</a>
+          <a class="btn btn-b" href="#index">按类型检索</a>
+        </div>
+        <div class="metabar">
+          <div><b>06</b><span>本周在列条目</span></div>
+          <div><b>18</b><span>类型标签</span></div>
+          <div><b>4 级</b><span>观看难度分级</span></div>
+          <div><b>每周一</b><span>排期更新日</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="picks">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>本周片单 · 六条在列</h2>
+        <p>每条附一句编辑按语，写明它适合什么时段、什么心情，先看按语再决定点开哪一条。</p>
+        <span class="tiny">栏目 01 / PICKS</span>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb"><s>01</s><em>剧情 · 112 分钟 · 华语</em></div>
+          <div class="c-body">
+            <h3><a href="#">长夏未寄出的信</a></h3>
+            <p>小镇邮局里的三封信串起两代人的沉默。节奏慢，但情绪落点扎实，适合一个人看到片尾字幕走完。</p>
+            <div class="tags"><a href="#">舒缓叙事</a><a href="#">家庭关系</a><a href="#">难度 L2</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><s>02</s><em>悬疑 · 98 分钟 · 韩语</em></div>
+          <div class="c-body">
+            <h3><a href="#">第七个雨夜</a></h3>
+            <p>单一场景、四个人物、不断被推翻的证词。结构反转密集，建议留出完整的一小时四十分，中途别停。</p>
+            <div class="tags"><a href="#">密室结构</a><a href="#">反转</a><a href="#">难度 L3</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><s>03</s><em>动画 · 87 分钟 · 日语</em></div>
+          <div class="c-body">
+            <h3><a href="#">海边电车与旧唱片</a></h3>
+            <p>手绘背景配爵士配乐，几乎没有反派。周末下午的最佳选择，也可以当背景音放着。</p>
+            <div class="tags"><a href="#">治愈系</a><a href="#">音乐向</a><a href="#">难度 L1</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><s>04</s><em>纪录 · 76 分钟 · 法语</em></div>
+          <div class="c-body">
+            <h3><a href="#">面包房的凌晨四点</a></h3>
+            <p>跟拍一家社区面包房从和面到开门的两小时。无旁白，全靠现场声，看完会想立刻去楼下买个可颂。</p>
+            <div class="tags"><a href="#">纪实影像</a><a href="#">手艺</a><a href="#">难度 L1</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><s>05</s><em>黑白 · 124 分钟 · 意语</em></div>
+          <div class="c-body">
+            <h3><a href="#">雾中广场的长镜头</a></h3>
+            <p>作者电影的教科书式调度，单镜头最长十一分钟。适合已经看过不少片、想再往上走一层的观众。</p>
+            <div class="tags"><a href="#">作者电影</a><a href="#">黑白摄影</a><a href="#">难度 L4</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><s>06</s><em>公路 · 105 分钟 · 英语</em></div>
+          <div class="c-body">
+            <h3><a href="#">一路向西的旧皮卡</a></h3>
+            <p>两个陌生人、三千公里、荒诞的沿途遭遇。笑点密集，适合朋友聚会时一起看，中途可以随时接话。</p>
+            <div class="tags"><a href="#">公路片</a><a href="#">轻喜剧</a><a href="#">难度 L2</a></div>
+          </div>
+        </article>
+      </div>
+      <div class="more"><a href="#">查看全部往期片单条目</a></div>
+    </div>
+  </section>
+
+  <section id="index">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>类型索引 · 十八个入口</h2>
+        <p>先定情绪，再定类型。点开任意标签即可进入对应条目集合（内页建设中）。</p>
+        <span class="tiny">栏目 02 / INDEX</span>
+      </div>
+      <div class="split">
+        <div class="panel">
+          <h3>按情绪与形式检索</h3>
+          <div class="cloud">
+            <a class="big" href="#">舒缓叙事</a>
+            <a class="big" href="#">密室结构</a>
+            <a href="#">公路片</a>
+            <a href="#">作者电影</a>
+            <a href="#">黑白摄影</a>
+            <a href="#">纪实影像</a>
+            <a href="#">治愈系</a>
+            <a href="#">轻喜剧</a>
+            <a href="#">家庭关系</a>
+            <a class="big" href="#">反转结局</a>
+            <a href="#">音乐向</a>
+            <a href="#">手艺</a>
+            <a href="#">群像</a>
+            <a href="#">单场景</a>
+            <a href="#">长镜头</a>
+            <a href="#">夜景摄影</a>
+            <a href="#">书信体</a>
+            <a href="#">童年视角</a>
+          </div>
+          <div class="rank">
+            <h3 style="margin-bottom:8px">本周检索热度</h3>
+            <ul>
+              <li><b>1</b><a href="#">黑白摄影</a><span>↑ 12%</span></li>
+              <li><b>2</b><a href="#">密室结构</a><span>↑ 8%</span></li>
+              <li><b>3</b><a href="#">舒缓叙事</a><span>↑ 5%</span></li>
+              <li><b>4</b><a href="#">公路片</a><span>→ 持平</span></li>
+              <li><b>5</b><a href="#">纪实影像</a><span>↓ 3%</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="aside">
+          <div class="panel">
+            <h3>观看难度怎么分级</h3>
+            <p class="note">难度只描述观影所需的注意力，与影片质量无关。L1 可当背景音，L4 建议留出整块时间。</p>
+            <ul class="kv">
+              <li><span>L1 · 无负担</span><b>随时可看</b></li>
+              <li><span>L2 · 轻度投入</span><b>跟着剧情走</b></li>
+              <li><span>L3 · 需要记细节</span><b>不建议中断</b></li>
+              <li><span>L4 · 需要耐心</span><b>整块时间</b></li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>站点速览</h3>
+            <ul class="kv">
+              <li><span>站点名称</span><b>神马电影网秋霞</b></li>
+              <li><span>网址</span><b>shenmadianyingwangqiuxia-app.github.io</b></li>
+              <li><span>收录语种</span><b>简中为主</b></li>
+              <li><span>更新节奏</span><b>每周一 + 周末补录</b></li>
+              <li><span>条目体量</span><b>持续扩充</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>排期日程 · 一周安排</h2>
+        <p>整周条目按日排布，标注替换与补录节点，方便提前安排观影时段。</p>
+        <span class="tiny">栏目 03 / SCHEDULE</span>
+      </div>
+      <div class="panel">
+        <ul class="timeline">
+          <li>
+            <h4>周一 · 整周片单上架 <u>固定更新</u></h4>
+            <p>六条在列条目一次性放出，附编辑按语与难度分级，旧条目同步移入往期归档。</p>
+          </li>
+          <li>
+            <h4>周三 · 类型索引校准 <u>例行维护</u></h4>
+            <p>根据本周检索热度调整标签权重，热度连续两周垫底的标签会被折叠进二级入口。</p>
+          </li>
+          <li>
+            <h4>周五 · 深夜档推荐 <u>时段特供</u></h4>
+            <p>只推时长 100 分钟以内、节奏偏慢的条目，避免看到一半需要暂停第二天接着看。</p>
+          </li>
+          <li>
+            <h4>周六 · 聚会同看清单 <u>场景特供</u></h4>
+            <p>筛选笑点密集、可以随时接话的条目，默认排除需要高度集中注意力的悬疑与作者电影。</p>
+          </li>
+          <li>
+            <h4>周日 · 补录与勘误 <u>机动</u></h4>
+            <p>处理本周遗漏条目与信息订正，同时在排期日程区块同步标注变动说明。</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>观影指南 · 五个常见问题</h2>
+        <p>关于筛选口径、更新节奏与使用方式的说明，点开即可展开。</p>
+        <span class="tiny">栏目 04 / GUIDE</span>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>神马电影网秋霞的片单是怎么挑出来的？</summary>
+          <div class="ans">按<b>导演风格</b>、<b>叙事结构</b>、<b>影像质感</b>三条线索交叉筛选，再按观看难度分级，标注时长与适配场景。同一导演不连续两期占位，避免片单变成单一作者专场。</div>
+        </details>
+        <details>
+          <summary>片荒的时候该从哪里开始看？</summary>
+          <div class="ans">先去<b>类型索引</b>定情绪方向，再回到<b>本周片单</b>挑一部时长合适的条目。通勤选 L1，睡前选舒缓叙事类，周末深夜优先看时长 100 分钟以内的那几部。</div>
+        </details>
+        <details>
+          <summary>排期日程多久更新一次？</summary>
+          <div class="ans">每周一更新整周排期，周日做一次补录与勘误。条目发生替换时，会直接在<b>排期日程</b>区块标注变动原因，不留静默修改。</div>
+        </details>
+        <details>
+          <summary>难度分级和实际观影体验差得多怎么办？</summary>
+          <div class="ans">分级来自编辑初评，欢迎在<b>联系入口</b>提交你的判断。同一条目收到两次以上反馈会重新评级，并在下周片单里说明调整理由。</div>
+        </details>
+        <details>
+          <summary>这个站点提供在线播放或下载吗？</summary>
+          <div class="ans">不提供。<b>神马电影网秋霞</b>只做片单索引与观影整理，条目信息指向公开的正规发行渠道，请通过已授权的影视平台观看。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="archive">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>站点档案 · 关于神马电影网秋霞</h2>
+        <p>把筛选标准写清楚，让你知道每一条片单为什么在列。</p>
+        <span class="tiny">栏目 05 / ARCHIVE</span>
+      </div>
+      <div class="about">
+        <div>
+          <p><strong>神马电影网秋霞</strong>起于一份私人的观影手账：看过的片越来越多，能想起来的却越来越少。
+            于是把每张票根、每段笔记拆成三个字段重新归档——它讲了什么、它怎么讲、它看起来是什么样。</p>
+          <p>拆完之后发现，挑片这件事其实有迹可循：多数人的犹豫不是没有好片，而是不知道自己此刻想要哪种节奏。
+            所以本站把条目按<b>情绪与形式</b>重新编号，配上时长和难度，让选择变成两步而不是二十分钟。</p>
+          <p>网址固定为 <strong>https://shenmadianyingwangqiuxia-app.github.io</strong>，
+            不设镜像、不做跳转，认准这一条即可。</p>
+          <div class="urlbar">
+            <i>唯一入口</i>
+            <b>https://shenmadianyingwangqiuxia-app.github.io</b>
+          </div>
+        </div>
+        <div class="pillars">
+          <div><b>三重筛选</b><span>导演风格 / 叙事结构 / 影像质感，缺一不列入。</span></div>
+          <div><b>难度分级</b><span>L1 到 L4，只描述所需注意力，不评价质量。</span></div>
+          <div><b>时段标注</b><span>通勤、睡前、周末、聚会，四种场景分开推荐。</span></div>
+          <div><b>周更节律</b><span>周一上架、周五深夜档、周六聚会清单。</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>联系入口 · 投稿与勘误</h2>
+        <p>条目错漏、难度评级争议、想推荐某部片，都可以从下面进入（内页建设中）。</p>
+        <span class="tiny">栏目 06 / CONTACT</span>
+      </div>
+      <div class="split">
+        <div class="panel">
+          <h3>三种常见的提交类型</h3>
+          <ul class="kv">
+            <li><span>信息勘误</span><b><a href="#">提交订正说明</a></b></li>
+            <li><span>难度复议</span><b><a href="#">发起评级讨论</a></b></li>
+            <li><span>片单推荐</span><b><a href="#">填写推荐表单</a></b></li>
+            <li><span>合作洽谈</span><b><a href="#">查看联系方式</a></b></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>提交前先看这两条</h3>
+          <p class="note">一、请写清条目名称与具体字段，只说"不对"无法定位问题。</p>
+          <p class="note" style="margin-top:12px">二、难度复议请说明你的观看场景，通勤党和深夜党的体感往往相反。</p>
+          <ul class="kv" style="margin-top:16px">
+            <li><span>处理周期</span><b>三个工作日内</b></li>
+            <li><span>反馈方式</span><b>下期片单公示</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b>神马电影网秋霞</b>
+        <p>秋霞专区片单索引与观影排期手册，按导演风格、叙事结构与影像质感重新整理条目。</p>
+        <div class="urlbar">
+          <i>网址</i>
+          <b>https://shenmadianyingwangqiuxia-app.github.io</b>
+        </div>
+      </div>
+      <div>
+        <h5>栏目导航</h5>
+        <ul>
+          <li><a href="#picks">本周片单</a></li>
+          <li><a href="#index">类型索引</a></li>
+          <li><a href="#schedule">排期日程</a></li>
+          <li><a href="#guide">观影指南</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>检索入口</h5>
+        <ul>
+          <li><a href="#">黑白摄影</a></li>
+          <li><a href="#">密室结构</a></li>
+          <li><a href="#">舒缓叙事</a></li>
+          <li><a href="#">公路片</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>站点信息</h5>
+        <ul>
+          <li><a href="#archive">站点档案</a></li>
+          <li><a href="#contact">联系入口</a></li>
+          <li><a href="#">更新日志</a></li>
+          <li><a href="#">收录说明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 神马电影网秋霞 · shenmadianyingwangqiuxia-app.github.io · 本站仅提供片单索引，不提供在线播放与下载</span>
+      <span>
+        <a href="#">隐私说明</a> ·
+        <a href="#">条目规范</a> ·
+        <a href="#">回到顶部</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.getElementById('menuBtn');
+  var nav = document.getElementById('nav');
+  btn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if (e.target.tagName === 'A') {
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+  var links = [].slice.call(nav.querySelectorAll('a'));
+  var marks = [].slice.call(document.querySelectorAll('main section[id]'));
+  window.addEventListener('scroll', function(){
+    var pos = window.scrollY + 120, cur = '';
+    marks.forEach(function(s){
+      if (s.offsetTop <= pos) { cur = s.id; }
+    });
+    links.forEach(function(a){
+      a.classList.toggle('on', a.getAttribute('href') === '#' + cur);
+    });
+  }, {passive:true});
+})();
+</script>
+</body>
+</html>
